@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Swing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>🎡 Smart Swing Game</h1>
+        <p>Հավասարակշռիր ճոճանակը։</p>
+
+        <div class="score">
+            Միավորներ՝ <span id="score">0</span>
+        </div>
+
+        <div class="play-area">
+            <div class="swing" id="swing">
+                <div class="character left" id="leftCharacter">👧</div>
+                <div class="character right" id="rightCharacter">👦</div>
+            </div>
+            <div class="support"></div>
+        </div>
+
+        <div class="controls">
+            <button onclick="addWeight('left')">Ավելացնել ձախում</button>
+            <button onclick="addWeight('right')">Ավելացնել աջում</button>
+            <button onclick="resetGame()">Նորից սկսել</button>
+        </div>
+
+        <h2 id="message">Փորձիր հավասարակշռել ճոճանակը։</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
